@@ -1,10 +1,201 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>portfolio</title>
-	</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balkrishna Jha - Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior: smooth; }
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+    background-size: 800% 800%;
+    animation: gradientBG 15s ease infinite;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 25px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #8e44ad;
+    transition: transform 0.7s;
+}
+
+.profile-img:hover { transform: scale(1.1) rotate(5deg); }
+
+.name {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #8e44ad;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Section Titles */
+h2 {
+    color: #8e44ad;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content:'';
+    position:absolute;
+    width:50%;
+    height:3px;
+    background:#8e44ad;
+    left:0; bottom:-5px;
+    border-radius:3px;
+}
+
+section { margin-bottom: 40px; animation: fadeUp 1.5s ease forwards; }
+
+@keyframes fadeUp {
+    0%{opacity:0; transform:translateY(20px);}
+    100%{opacity:1; transform:translateY(0);}
+}
+
+/* Cards */
+.card {
+    background:#f7f3fa;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:15px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover { transform: translateY(-7px) scale(1.02); box-shadow:0 15px 35px rgba(0,0,0,0.15); }
+
+/* List Styles */
+ul { list-style:none; padding-left:0; display:flex; flex-wrap:wrap; gap:10px; }
+ul li {
+    background:#fff;
+    padding:10px 15px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, background 0.3s;
+}
+
+ul li:hover { transform: translateY(-5px); background: #8e44ad; color:#fff; }
+
+/* Contact */
+.contact-item { margin-bottom:12px; display:flex; align-items:center; gap:10px; font-size:1rem; }
+.contact-item i { color:#8e44ad; }
+.contact-item span { font-weight:600; }
+
+/* Responsive */
+@media(max-width:600px){
+    .container { margin:20px; padding:15px; }
+    .name { font-size:2rem; }
+    ul { flex-direction:column; }
+}
+</style>
+</head>
 <body>
-<h1></h1>this is my portfolio<h1>
-<h2>Welcome to my personal website! Here you can see my projects.<h2>
-	</body>
-<footer>
-	</footer>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <img src="balkrishna-photo.jpg" alt="Balkrishna Jha" class="profile-img">
+        <h1 class="name">Balkrishna Jha</h1>
+        <p class="title">BTech IT Student</p>
+    </div>
+
+    <!-- About Me -->
+    <section>
+        <h2>About Me</h2>
+        <p>I am a Second-year BTech student in Information Technology, eager to learn and develop new skills. I am seeking opportunities to gain practical experience, contribute to projects, and enhance my technical knowledge while growing professionally.</p>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <div class="card"><strong>B.Tech (IT)</strong> - SRMCEM LUCKNOW<br>Session: 2024-2028</div>
+        <div class="card"><strong>Intermediate</strong> - DR. RMLS COLLEGE MUZAFFARPUR<br>Session: 2022-2024</div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>MS Word</li>
+            <li>MS Excel</li>
+            <li>PowerPoint</li>
+            <li>Internet Research</li>
+            <li>Basic Computer Operations</li>
+            <li>Typing</li>
+            <li>Time Management</li>
+            <li>Adaptability</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section>
+        <h2>Projects</h2>
+        <div class="card">GitHub Profile Setup and Live Link<br>Currently working on other projects</div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+        <h2>Experience</h2>
+        <div class="card">No professional work experience yet. Actively seeking opportunities to gain practical exposure.</div>
+    </section>
+
+    <!-- Languages -->
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>Hindi (Fluent)</li>
+            <li>English (Basic)</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section>
+        <h2>Contact</h2>
+        <div class="contact-item"><i class="fa fa-phone"></i> <span>Phone:</span> 6207480364</div>
+        <div class="contact-item"><i class="fa fa-envelope"></i> <span>Email:</span> balkrishnajha201@gmail.com</div>
+        <div class="contact-item"><i class="fa fa-map-marker-alt"></i> <span>Location:</span> LUCKNOW, UP, INDIA</div>
+    </section>
+</div>
+
+</body>
+</html>
